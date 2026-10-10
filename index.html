@@ -275,7 +275,7 @@ header,.auth-bar,.tabs,.toast-container,.loading-overlay,footer,.no-print{displa
       <p style="color:var(--gray);margin-bottom:20px">Remove stock from store and send to destination. This will reduce inventory quantity.</p>
       <form id="outForm" onsubmit="outFromStore(event)">
         <div class="form-grid">
-          <div class="form-group"><label>Part Number *</label><select id="outPartNumber" required onchange="fillOutDetails()"><option value="">Select Part</option></select></div>
+          <div class="form-group"><label>Part Number *</label><input id="outPartNumber" required onchange="fillOutDetails()"><option value="">Select Part</option></select></div>
           <div class="form-group"><label>Current Stock</label><input type="text" id="outCurrentStock" readonly placeholder="Auto-filled" style="background:#f3f4f6"></div>
           <div class="form-group"><label>Quality</label><input type="text" id="outQuality" readonly placeholder="Auto-filled" style="background:#f3f4f6"></div>
           <div class="form-group"><label>Destination *</label><select id="outDestination" required><option value="">Select Destination</option><option>Shop</option><option>Staff Order</option><option>Kurunegala</option></select></div>
